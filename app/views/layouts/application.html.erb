@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TweeterHotwire</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= yield :head %>
+    <%= turbo_include_tags %>
+    <%= stimulus_include_tags %>
+  </head>
+
+  <body>
+    <div class="site-content-wrapper">
+      <%= yield %>
+    </div>
+  </body>
+</html>
